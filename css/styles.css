@@ -99,17 +99,18 @@ p {
 }
 
 .menu-button {
-    display: flex;
+    position: absolute;
+    top: 16px;
+    right: 16px;
     width: 24px;
     height: 24px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    background: none;
-    border: none;
-    cursor: pointer;
     padding: 0;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-left: auto;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
 }
 
 .close-menu {
@@ -754,7 +755,7 @@ input::placeholder {
     margin-left: 16px;
 }
 
-*/ .modal {
+.modal {
     position: fixed;
     top: 0;
     left: 0;
