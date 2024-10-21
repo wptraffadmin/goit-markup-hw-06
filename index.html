@@ -578,6 +578,25 @@
         body.classList.remove('no-scroll');
         });
   </script>
+  <script>
+        const homeButton = document.querySelector('.home-button');
+        const modal = document.querySelector('.modal');
+        const closeButton = document.getElementById('modalbutton');
+
+        homeButton.addEventListener('click', () => {
+        modal.classList.add('active');
+        });
+
+        closeButton.addEventListener('click', () => {
+        modal.classList.remove('active');
+        });
+
+        window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+        modal.classList.remove('active');
+        }
+        });
+  </script>
 
 </body>
 </html>

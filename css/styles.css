@@ -953,6 +953,15 @@ input::placeholder {
     pointer-events: none;
 }
 
+.modal.active {
+    opacity: 1;
+    /* Показати модальне вікно */
+    pointer-events: auto;
+    /* Дозволити події */
+    visibility: visible;
+    /* Показати модальне вікно */
+}
+
 .modal-window {
     position: absolute;
     top: 50%;
